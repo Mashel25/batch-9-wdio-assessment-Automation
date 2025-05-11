@@ -11,23 +11,16 @@ class ZToAAction {
         await browser.pause(5000);
     }
 
-   async resetAppState() {
-    await ZToAobject.burgerMenu.waitForClickable({ timeout: 5000 });
-    await ZToAobject.burgerMenu.click();
-
-    const resetLink = await ZToAobject.resetAppState;
-
-    await resetLink.waitForDisplayed({ timeout: 5000 });
-    await resetLink.scrollIntoView();
-    await resetLink.waitForClickable({ timeout: 5000 });
-    await resetLink.click();
-
-    console.log('App state has been reset');
-
-    // Ensure the menu closes cleanly
-    await $('body').click();
-    await browser.pause(500);
-}
+    async resetAppState() {
+        await ZToAobject.burgerMenu.click();
+      
+        await browser.pause(1000);
+        await ZToAobject.resetAppState.click();
+        console.log('App state has been reset');
+       
+        await browser.pause(500);
+        await $('body').click();
+    }
 
     
 async logout() {

@@ -5,7 +5,7 @@
 //const search ="./specs/search.spec.js";
 const purches = "./specs/purches.spec.js";
 const login = "./specs/log.spec.js";
-const product = "./specs/product.spec.js";
+const ZToA = "./specs/ZToA.spec.js";
 
 
 
@@ -113,7 +113,7 @@ exports.config = {
     //
     capabilities: [{
        
-        browserName: 'Chrome',
+        browserName: 'firefox',
          maxInstances: 5,
         
       
