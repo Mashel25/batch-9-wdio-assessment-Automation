@@ -1,5 +1,10 @@
 node_modules
 package-lock.json
+<<<<<<< HEAD
 allure-results/
 allure-report/
 
+=======
+allure-report/
+allure-results/
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498

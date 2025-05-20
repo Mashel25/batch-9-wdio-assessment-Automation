@@ -1,11 +1,30 @@
+<<<<<<< HEAD
 
 
 const search ="./specs/search.spec.js";
 const product = "./specs/product.spec.js";
+=======
+//const { productVariation } = require("./test/product/productObject");
+
+//const { login } = require("./test/pageobjects/login.page");
+
+//const search ="./specs/search.spec.js";
+const purches = "./specs/purches.spec.js";
+const login = "./specs/log.spec.js";
+const ZToA = "./specs/ZToA.spec.js";
+
+
+
+
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
 
 
 
 exports.config = {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
     //
     // ====================
     // Runner Configuration
@@ -29,10 +48,59 @@ exports.config = {
     //
      //specs: ["./specs/search.spec.js"],
   //specs: ["./specs/search.spec.js"],
+<<<<<<< HEAD
   specs: [ search, product],
   suites: {
    productToCart: [ [search, product],]
   },
+=======
+  //specs: [ search, product],
+  //suites: {
+   //productToCart: [ [search, product],]
+  //},
+//specs: ["./specs/log.spec.js"],
+//suites: {
+   // login: ["./specs/log.spec.js"]
+//},
+
+
+ // suites: {
+  // productToCart: [ [search, product],]
+ // },
+
+  //productToCart: [login, product],
+ /*   suites: {
+    login: ['./specs/log.spec.js'],
+    purches: ['./specs/purches.spec.js'],
+    ZToA: ['./specs/ZToA.spec.js'], 
+    
+    
+  },
+  
+  
+  */
+ suites: {
+  login: [
+    './specs/log.spec.js'
+  ],
+  purches: [
+    './specs/purches.spec.js'
+  ],
+  ZToA: [
+    './specs/ZToA.spec.js'
+  ],
+  allSuites: [
+    './specs/log.spec.js',
+    './specs/purches.spec.js',
+    './specs/ZToA.spec.js'
+  ]
+},
+
+
+   
+
+   
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
    
     // Patterns to exclude.
     exclude: [
@@ -61,7 +129,15 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
+<<<<<<< HEAD
         browserName: 'chrome'
+=======
+       
+        browserName: 'firefox',
+         maxInstances: 5,
+        
+      
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
     }],
 
     //
@@ -95,7 +171,12 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
+<<<<<<< HEAD
     baseUrl:"https://demo.evershop.io/",
+=======
+    baseUrl:"https://www.saucedemo.com/",
+   // baseUrl:"https://demo.evershop.io/",
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -148,7 +229,11 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
+<<<<<<< HEAD
         timeout: 60000
+=======
+        timeout: 120000
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
     },
 
     //
@@ -249,7 +334,11 @@ exports.config = {
      * @param {boolean} result.passed    true if test has passed, otherwise false
      * @param {object}  result.retries   information about spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
+<<<<<<< HEAD
     
+=======
+        
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
      afterTest: async function(test, context, { error, result, duration, passed, retries }) {
         if(error){
         const screenShot = await browser.takeScreenshot();
@@ -319,4 +408,9 @@ exports.config = {
     */
     // afterAssertion: function(params) {
     // }
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
 }
