@@ -6,13 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run wdio.conf.js",
     "getReport":"allure generate --clean allure-results && allure open allure-report",
-<<<<<<< HEAD
-    "product":" wdio run wdio.conf.js --suite productToCart",
-    "search":" wdio run wdio.conf.js --search"
-    
+
    
   },
-=======
     "allSuites": "wdio run wdio.conf.js --suite allSuites",
     "login": "wdio run wdio.conf.js --suite login",
      "purches": "wdio run wdio.conf.js --suite purches",
@@ -20,7 +16,6 @@
      "test:all": "npm run login && npm run purches && npm run ZToA"
      
        },
->>>>>>> 327317afa4d52ccd32108380a3591111a57e2498
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -32,5 +27,5 @@
     "@wdio/mocha-framework": "^9.12.1",
     "@wdio/spec-reporter": "^9.11.0",
     "allure-commandline": "^2.33.0"
-  }
+  }.
 }
