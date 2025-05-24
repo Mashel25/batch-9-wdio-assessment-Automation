@@ -6,9 +6,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run wdio.conf.js",
     "getReport":"allure generate --clean allure-results && allure open allure-report",
-
-   
-  },
     "allSuites": "wdio run wdio.conf.js --suite allSuites",
     "login": "wdio run wdio.conf.js --suite login",
      "purches": "wdio run wdio.conf.js --suite purches",
@@ -27,5 +24,5 @@
     "@wdio/mocha-framework": "^9.12.1",
     "@wdio/spec-reporter": "^9.11.0",
     "allure-commandline": "^2.33.0"
-  }.
+  }
 }
