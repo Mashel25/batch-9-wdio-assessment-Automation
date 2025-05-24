@@ -9,7 +9,8 @@ After every execution, an **Allure** report is generated automatically.
 
 ##  Prerequisites
 
-- Framework: **Mocha**
+- 
+- Framework: Webdriver IO **Mocha**
 - Language: **JavaScript**
 - **Node.js** (v18 or higher)
 - **Git**
@@ -49,3 +50,5 @@ cd batch-9-wdio-assessment-Automation
 After each test run, generate and view the Allure report using:
 ---
 	npm run getResult
+	
+	Md.Zia Abrar 
