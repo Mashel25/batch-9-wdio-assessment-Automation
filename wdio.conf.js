@@ -1,6 +1,5 @@
 
 
-
 const search ="./specs/search.spec.js";
 const product = "./specs/product.spec.js";
 
@@ -125,9 +124,16 @@ exports.config = {
     capabilities: [{
    
         browserName: 'chrome',
+         acceptInsecureCerts: true, 
+  'ms:edgeOptions': {
+    args: [
+      '--ignore-certificate-errors',
+      '--no-sandbox',
+      '--disable-dev-shm-usage'
+    ]
+  }
+         
     
-        
-      
 
     }],
 
