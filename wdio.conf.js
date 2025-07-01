@@ -122,20 +122,19 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-   
-        browserName: 'chrome',
-         acceptInsecureCerts: true, 
+  browserName: 'firefox',
+  acceptInsecureCerts: true,
   'ms:edgeOptions': {
     args: [
-      '--ignore-certificate-errors',
+      '--disable-gpu',
       '--no-sandbox',
-      '--disable-dev-shm-usage'
+      '--disable-dev-shm-usage',
+      '--ignore-certificate-errors',
+      '--window-size=1920,1080'
     ]
   }
-         
-    
+}],
 
-    }],
 
     //
     // ===================

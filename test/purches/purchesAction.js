@@ -38,7 +38,7 @@ class PurchesAction {
         await browser.pause(2000);
     
        
-        await purchesObject.checkoutBtn.waitForDisplayed({ timeout: 10000 });
+        await purchesObject.checkoutBtn.waitForDisplayed({ timeout: 5000 });
     
         await purchesObject.checkoutBtn.click();
         await browser.pause(5000);
