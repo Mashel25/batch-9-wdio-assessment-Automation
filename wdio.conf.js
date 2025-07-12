@@ -122,19 +122,22 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-  browserName: 'firefox',
-  acceptInsecureCerts: true,
-  'ms:edgeOptions': {
-    args: [
-      '--disable-gpu',
-      '--no-sandbox',
-      '--disable-dev-shm-usage',
-      '--ignore-certificate-errors',
-      '--window-size=1920,1080'
-    ]
-  }
+    browserName: 'chrome',
+    'goog:chromeOptions': {
+        args: [
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-password-generation',
+            '--disable-save-password-bubble'
+        ],
+        excludeSwitches: ['enable-automation'],
+        useAutomationExtension: false,
+        prefs: {
+            'profile.password_manager_enabled': false,
+            'credentials_enable_service': false
+        }
+    }
 }],
-
 
     //
     // ===================
